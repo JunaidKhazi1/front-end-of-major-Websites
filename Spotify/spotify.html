@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+ <head>
+  <title>
+   Music App
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-black text-white font-sans">
+  <div class="flex h-screen">
+   <!-- Sidebar -->
+   <div class="w-1/5 bg-gray-900 p-4">
+    <div class="flex items-center mb-6">
+     <i class="fas fa-bars text-xl">
+     </i>
+     <h1 class="ml-4 text-xl font-bold">
+      Your Library
+     </h1>
+    </div>
+    <div class="flex items-center mb-6">
+     <i class="fas fa-plus text-xl">
+     </i>
+     <h1 class="ml-4 text-xl font-bold">
+      Playlists
+     </h1>
+    </div>
+    <div class="flex items-center mb-6">
+     <i class="fas fa-search text-xl">
+     </i>
+     <h1 class="ml-4 text-xl font-bold">
+      Recents
+     </h1>
+    </div>
+    <div class="mt-6">
+     <div class="flex items-center mb-4">
+      <img alt="Playlist cover" class="w-10 h-10 rounded" height="40" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-FFwmgOqBO19Z2LVWAu0dX2q0.png?st=2024-09-23T06%3A20%3A48Z&amp;se=2024-09-23T08%3A20%3A48Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-23T02%3A32%3A10Z&amp;ske=2024-09-24T02%3A32%3A10Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=Cdi/P9ngX7NWzQglS961Yo4R2%2Bjjd%2BzFOYE13nxTpto%3D" width="40"/>
+      <div class="ml-4">
+       <h2 class="text-sm font-bold">
+        Eenie Meenie
+       </h2>
+       <p class="text-xs text-gray-400">
+        Playlist • Junaid khazi
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+   <!-- Main Content -->
+   <div class="flex-1 p-6 overflow-y-auto">
+    <!-- Header -->
+    <div class="flex justify-between items-center mb-6">
+     <div class="flex space-x-4">
+      <button class="bg-gray-800 text-white px-4 py-2 rounded-full">
+       All
+      </button>
+      <button class="bg-gray-800 text-white px-4 py-2 rounded-full">
+       Music
+      </button>
+      <button class="bg-gray-800 text-white px-4 py-2 rounded-full">
+       Podcasts
+      </button>
+     </div>
+     <div class="flex items-center space-x-4">
+      <button class="bg-white text-black px-4 py-2 rounded-full">
+       Explore Premium
+      </button>
+      <i class="fas fa-bell text-xl">
+      </i>
+      <i class="fas fa-cog text-xl">
+      </i>
+      <div class="bg-orange-500 text-white w-8 h-8 rounded-full flex items-center justify-center">
+       J
+      </div>
+     </div>
+    </div>
+    <!-- Search Bar -->
+    <div class="flex items-center bg-gray-800 p-2 rounded-full mb-6">
+     <i class="fas fa-search text-gray-400 ml-4">
+     </i>
+     <input class="bg-transparent text-white ml-4 w-full focus:outline-none" placeholder="What do you want to play?" type="text"/>
+    </div>
+    <!-- Recommended for today -->
+    <div class="mb-6">
+     <h2 class="text-xl font-bold mb-4">
+      Recommended for today
+     </h2>
+     <div class="grid grid-cols-6 gap-4">
+      <div class="bg-gray-800 p-4 rounded">
+       <img alt="Eenie Meenie cover" class="w-full h-32 object-cover rounded mb-4" height="150" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-BnPNcpzqyzN7i1Hfl3SLJDKi.png?st=2024-09-23T06%3A20%3A47Z&amp;se=2024-09-23T08%3A20%3A47Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-22T23%3A32%3A16Z&amp;ske=2024-09-23T23%3A32%3A16Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=6MUsCM06iJ0i6rY3cQ1fZLvtV1Sx0nmDqMxxjg92L5I%3D" width="150"/>
+       <h3 class="text-sm font-bold">
+        Eenie Meenie
+       </h3>
+       <p class="text-xs text-gray-400">
+        Sean Kingston, Justin Bieber
+       </p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded">
+       <img alt="Closer cover" class="w-full h-32 object-cover rounded mb-4" height="150" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-rtyyYrDTKfaTXyOFzeqs0aMG.png?st=2024-09-23T06%3A20%3A47Z&amp;se=2024-09-23T08%3A20%3A47Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-22T23%3A21%3A47Z&amp;ske=2024-09-23T23%3A21%3A47Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=ilnTk34IfeZapITo7iaElS7NV9mE3h%2B0BJgPIg7rVcQ%3D" width="150"/>
+       <h3 class="text-sm font-bold">
+        Closer
+       </h3>
+       <p class="text-xs text-gray-400">
+        The Chainsmokers, Halsey
+       </p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded">
+       <img alt="Illuminate cover" class="w-full h-32 object-cover rounded mb-4" height="150" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-S6shzDQUtCRGxrw5mKOcUYKT.png?st=2024-09-23T06%3A20%3A53Z&amp;se=2024-09-23T08%3A20%3A53Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-22T23%3A31%3A55Z&amp;ske=2024-09-23T23%3A31%3A55Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=ETESPTUsJxyDIhEuUTf3cJXff%2BSaCKf2oXYlFKR5YNY%3D" width="150"/>
+       <h3 class="text-sm font-bold">
+        Illuminate
+       </h3>
+       <p class="text-xs text-gray-400">
+        Shawn Mendes
+       </p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded">
+       <img alt="Rewrite The Stars cover" class="w-full h-32 object-cover rounded mb-4" height="150" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-HhbWMCvpagFOJvNAt3vLX8vE.png?st=2024-09-23T06%3A20%3A47Z&amp;se=2024-09-23T08%3A20%3A47Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-22T23%3A29%3A36Z&amp;ske=2024-09-23T23%3A29%3A36Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=Bao5nf0f1UoqThQTtgwrLKA9Mimuh3eE05r7EAucp4o%3D" width="150"/>
+       <h3 class="text-sm font-bold">
+        Rewrite The Stars (with James Arthur &amp; Anne-Marie)
+       </h3>
+       <p class="text-xs text-gray-400">
+        James Arthur, Anne-Marie
+       </p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded">
+       <img alt="a thousand years cover" class="w-full h-32 object-cover rounded mb-4" height="150" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-VAkoLSHnD8lAdHCRWB9yOj2F.png?st=2024-09-23T06%3A20%3A47Z&amp;se=2024-09-23T08%3A20%3A47Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-23T00%3A03%3A52Z&amp;ske=2024-09-24T00%3A03%3A52Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=Eogs7g%2Bdc6YzlV3pQ9xTgE13/x8o%2BQqg87VvmHzbMXY%3D" width="150"/>
+       <h3 class="text-sm font-bold">
+        a thousand years
+       </h3>
+       <p class="text-xs text-gray-400">
+        Christina Perri
+       </p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded">
+       <img alt="Divide cover" class="w-full h-32 object-cover rounded mb-4" height="150" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-qm2EXZbZ8sJEs2XIpQ3fMHj3.png?st=2024-09-23T06%3A20%3A46Z&amp;se=2024-09-23T08%3A20%3A46Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-23T00%3A58%3A36Z&amp;ske=2024-09-24T00%3A58%3A36Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=l%2Bi9GLqLhQPvoSdOfgXQxCMd/ogJ7%2Bkv7WIUcWenT8U%3D" width="150"/>
+       <h3 class="text-sm font-bold">
+        ÷ (Deluxe)
+       </h3>
+       <p class="text-xs text-gray-400">
+        Ed Sheeran
+       </p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded">
+       <img alt="FOUR cover" class="w-full h-32 object-cover rounded mb-4" height="150" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-UWWpQRPTodxvoHuXN4i7vkUJ.png?st=2024-09-23T06%3A20%3A46Z&amp;se=2024-09-23T08%3A20%3A46Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-22T23%3A37%3A22Z&amp;ske=2024-09-23T23%3A37%3A22Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=E7ftiOKIIdlT64rck98SzLt3feSZvgNKjHaRjc%2BhWGs%3D" width="150"/>
+       <h3 class="text-sm font-bold">
+        FOUR (Deluxe)
+       </h3>
+       <p class="text-xs text-gray-400">
+        One Direction
+       </p>
+      </div>
+     </div>
+    </div>
+    <!-- Recently played -->
+    <div>
+     <h2 class="text-xl font-bold mb-4">
+      Recently played
+     </h2>
+     <div class="grid grid-cols-6 gap-4">
+      <div class="bg-gray-800 p-4 rounded">
+       <img alt="The Weeknd cover" class="w-full h-32 object-cover rounded-full mb-4" src="https://placehold.co/150x150"/>
+       <h3 class="text-sm font-bold">
+        The Weeknd
+       </h3>
+       <p class="text-xs text-gray-400">
+        Artist
+       </p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded">
+       <img alt="Eenie Meenie cover" class="w-full h-32 object-cover rounded mb-4" height="150" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-BnPNcpzqyzN7i1Hfl3SLJDKi.png?st=2024-09-23T06%3A20%3A47Z&amp;se=2024-09-23T08%3A20%3A47Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-22T23%3A32%3A16Z&amp;ske=2024-09-23T23%3A32%3A16Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=6MUsCM06iJ0i6rY3cQ1fZLvtV1Sx0nmDqMxxjg92L5I%3D" width="150"/>
+       <h3 class="text-sm font-bold">
+        Eenie Meenie
+       </h3>
+       <p class="text-xs text-gray-400">
+        By Junaid khazi
+       </p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded">
+       <img alt="With You cover" class="w-full h-32 object-cover rounded mb-4" height="150" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-TcM2lVBkbI7pbQtmGT1SIR6A.png?st=2024-09-23T06%3A20%3A46Z&amp;se=2024-09-23T08%3A20%3A46Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-23T02%3A44%3A24Z&amp;ske=2024-09-24T02%3A44%3A24Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=j3XeZnUTy09m2KAHypugEsgSQprPlS/L4DT8KuR5Z1c%3D" width="150"/>
+       <h3 class="text-sm font-bold">
+        With You
+       </h3>
+       <p class="text-xs text-gray-400">
+        AP Dhillon
+       </p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded">
+       <img alt="Until I Found You cover" class="w-full h-32 object-cover rounded mb-4" height="150" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-cMkatfnAUuLN6qdE5fVSz019.png?st=2024-09-23T06%3A20%3A48Z&amp;se=2024-09-23T08%3A20%3A48Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-22T23%3A48%3A21Z&amp;ske=2024-09-23T23%3A48%3A21Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=G5LdS%2BPGOhwRXjPPizsjdG3ol9NgJJhvDNnMYt0lJT8%3D" width="150"/>
+       <h3 class="text-sm font-bold">
+        Until I Found You (Em Beihold Version)
+       </h3>
+       <p class="text-xs text-gray-400">
+        Stephen Sanchez, Em Beihold
+       </p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded">
+       <img alt="Divide cover" class="w-full h-32 object-cover rounded mb-4" height="150" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-qm2EXZbZ8sJEs2XIpQ3fMHj3.png?st=2024-09-23T06%3A20%3A46Z&amp;se=2024-09-23T08%3A20%3A46Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-23T00%3A58%3A36Z&amp;ske=2024-09-24T00%3A58%3A36Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=l%2Bi9GLqLhQPvoSdOfgXQxCMd/ogJ7%2Bkv7WIUcWenT8U%3D" width="150"/>
+       <h3 class="text-sm font-bold">
+        ÷ (Deluxe)
+       </h3>
+       <p class="text-xs text-gray-400">
+        Ed Sheeran
+       </p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded">
+       <img alt="Pink Blue X Saude Bazi cover" class="w-full h-32 object-cover rounded mb-4" height="150" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-Rs21HzsoJSsqIVwe19MZNyTp.png?st=2024-09-23T06%3A20%3A50Z&amp;se=2024-09-23T08%3A20%3A50Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-22T23%3A49%3A59Z&amp;ske=2024-09-23T23%3A49%3A59Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=/R43r2w1O4Vbr5D/oaRxUYz2YzZ6hMYiaTYmOoHPZEc%3D" width="150"/>
+       <h3 class="text-sm font-bold">
+        Pink Blue X Saude Bazi
+       </h3>
+       <p class="text-xs text-gray-400">
+        By RONIT ROSHAN
+       </p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded">
+       <img alt="English playlist cover" class="w-full h-32 object-cover rounded mb-4" height="150" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-fXUTxs8eK29zgx6ub6FOgGiE.png?st=2024-09-23T06%3A20%3A48Z&amp;se=2024-09-23T08%3A20%3A48Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-23T00%3A06%3A01Z&amp;ske=2024-09-24T00%3A06%3A01Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=OdP7Waqfk5b4XYe6oo8YhPxznqZf6hEYtRjlLEiFmeY%3D" width="150"/>
+       <h3 class="text-sm font-bold">
+        English playlist
+       </h3>
+       <p class="text-xs text-gray-400">
+        By Tan Ming Yan
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
